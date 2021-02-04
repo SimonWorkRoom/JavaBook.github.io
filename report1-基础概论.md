@@ -17,53 +17,7 @@
 ## 实验步骤：
 1.第一题代码如下：
 **代码**
----java
-import java.util.Scanner;//先调用Scanner
-public class javatry1 {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		//1,
-		Scanner r=new Scanner(System.in);
-		System.out.println("请输入您的姓名：  \n");//用户输入
-		String n=r.next();
-		System.out.println("请输入您的性别：  \n");//用户输入
-		String y=r.next();
-		System.out.println("请输入您的年龄：  \n");//用户输入
-		 int ag=r.nextInt();
-		System.out.println("请输入您的爱好： \n ");//用户输入
-		String hb=r.next();
-		
-		person p=new person();
-
-		p.check(n,y,ag,hb);
-
-	}
-
-}
----
-
----java
-class person{
-	 String name;//名字
-	 String x;//性别
-	 int ager ;//年龄
-	 String hbt;//爱好
-	 
-	public void check(String name,String x,int ager,String hbt){//验证
-		if(x.equals("男") && ager>=18 || ager<=60){
-			System.out.println("姓名：\n"+name+"性别：\n"+x+"年龄：\n"+ager+"爱好：\n"+hbt);
-		}
-		else if(x.equals("女")&& ager>=18 || ager<=60){
-			System.out.println("姓名：\n"+name+"\n性别：\n"+x+"\n年龄：\n"+ager+"\n爱好：\n"+hbt);
-		}
-		else{
-			System.out.println("您的输入不正确！");
-		}
-	}
-	
-}
----
 
 
 1. Numbered
